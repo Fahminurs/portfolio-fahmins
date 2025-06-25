@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>About Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="about">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+        <div id="hideSwitcher">&times;</div>
+    </div>
+
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+      <ul
+        class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1"
+      >
+        <li class="icon-box ">
+          <i class="fa fa-home"></i>
+          <a href="index.html">
+            <h2>Home</h2>
+          </a>
+        </li>
+        <li class="icon-box active">
+          <i class="fa fa-user"></i>
+          <a href="about.html">
+            <h2>About</h2>
+          </a>
+        </li>
+        <li class="icon-box ">
+          <i class="fa fa-trophy"></i>
+          <a href="award.html">
+            <h2>Awards</h2>
+          </a>
+        </li>
+  
+        <li class="icon-box">
+          <i class="fa fa-envelope-open"></i>
+          <a href="contact.html">
+            <h2>Contact</h2>
+          </a>
+        </li>
+      </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+      <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="list-unstyled" id="menu">
+            <li >
+              <a href="index.html"
+                ><i class="fa fa-home"></i><span>Home</span></a
+              >
+            </li>
+            <li class="active">
+              <a href="about.html"
+                ><i class="fa fa-user"></i><span>About</span></a
+              >
+            </li>
+            <li >
+              <a href="award.html"
+                ><i class="fa fa-trophy"></i><span>Awards</span></a
+              >
+            </li>
+ 
+            <li>
+              <a href="contact.html"
+                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>ABOUT <span>ME</span></h1>
+    <span class="title-bg">Resume</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Personal Info Starts -->
+            <div class="col-12 col-lg-5 col-xl-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-uppercase custom-title mb-0 ft-wt-600">personal infos</h3>
+                    </div>
+                    <div class="col-12 d-block d-sm-none">
+                        <img src="img/img-mobile.png" class="img-fluid main-img-mobile" alt="my picture" />
+                    </div>
+                    <div class="col-6">
+                        <ul class="about-list list-unstyled open-sans-font">
+                            <li> <span class="title">first name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Fahmi</span> </li>
+                            <li> <span class="title">last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Nursafaat</span> </li>
+                            <li> <span class="title">Age :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">22 Years</span> </li>
+                            <li> <span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Indonesian</span> </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="about-list list-unstyled open-sans-font">
+                            <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Bandung</span> </li>
+                            <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+6285162608048</span> </li>
+                            <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">fahminursafaat@gmail.com</span> </li>
+                            <li> <span class="title">langages :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Indonesia, English</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Personal Info Ends -->
+            <!-- Boxes Ends -->
+        </div>
+        <hr class="separator">
+        <!-- Skills Starts -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">My Skills</h3>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                <div class="c100 p100">
+                    <span>100%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">html</h6>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                <div class="c100 p90">
+                    <span>90%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">javascript</h6>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                <div class="c100 p90">
+                    <span>90%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">css</h6>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                <div class="c100 p66">
+                    <span>66%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">php</h6>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                <div class="c100 p60">
+                    <span>60%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">c++</h6>
+            </div>
+            
+        </div>
+        <!-- Skills Ends -->
+        <hr class="separator mt-1">
+        <!-- Experience & Education Starts -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&</span> Education</h3>
+            </div>
+            <div class="col-lg-6 m-15px-tb">
+<div class="resume-box">
+    <ul>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">May 2025</span>
+            <h5 class="poppins-font text-uppercase">AcneSense</h5>
+            <p class="open-sans-font">Developed an innovative AI-based system for accurate acne detection and classification, providing an efficient early screening solution. Created an optimal user experience through a Progressive Web App (PWA), allowing easy and quick access from various devices. The system consists of two main components: a web application and an API model, working together to deliver optimal functionality. Equipped with an interactive chatbot that provides direct information and advice to users regarding their skin condition. Includes a history feature to track changes and developments in acne conditions, assisting users in monitoring their skin health over time.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Nov-Dec 2024</span>
+            <h5 class="poppins-font text-uppercase">ImagePicker: Cyber Security Tools</h5>
+            <p class="open-sans-font">Developed a website using Flask for image steganography, designed secure image upload and processing systems, and implemented web interfaces for encryption and decryption.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Nov-Dec 2024</span>
+            <h5 class="poppins-font text-uppercase">Helios Tracker Web</h5>
+            <p class="open-sans-font">Developed a full-stack web application with a responsive design, real-time data visualization, and a robust backend using Laravel, including user management and IoT API integration.</p>
+        </li>
+<li>
+    <div class="icon">
+        <i class="fa fa-briefcase"></i>
+    </div>
+    <span class="time open-sans-font text-uppercase">Nov-Dec 2024</span>
+    <h5 class="poppins-font text-uppercase">Helios Tracker Mobile</h5>
+    <p class="open-sans-font">Developed a full-stack mobile application using Flutter, featuring a responsive design, real-time data visualization, and a robust backend using Laravel, including user management and IoT API integration.</p>
+</li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Okt-Nov 2024</span>
+            <h5 class="poppins-font text-uppercase">Moju (Mood Journal)</h5>
+            <p class="open-sans-font">Created a web application for mood management, integrating AI for emotional analysis, a content management system, and a discussion forum for user interaction and support using PHP native.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Sept-Okt 2024</span>
+            <h5 class="poppins-font text-uppercase">Skinsense AI</h5>
+            <p class="open-sans-font">Developed a frontend and backend application for skin disease detection using Flutter, integrating real-time image uploads and an authentication system with Flask.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Agu-Sept 2024</span>
+            <h5 class="poppins-font text-uppercase">Eunoia</h5>
+            <p class="open-sans-font">Implemented a Progressive Web App for mental health support using Laravel and Flask for backend integration, featuring discussions, sentiment analysis, and user-friendly navigation.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Feb-Jun 2024</span>
+            <h5 class="poppins-font text-uppercase">Sistem Automasi Penyewaan Konsol GIM</h5>
+            <p class="open-sans-font">Developed a time control system for rental PlayStation using backend mechanisms, integrating visual and audio notifications and a system for user management and token validation.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Jun 2024</span>
+            <h5 class="poppins-font text-uppercase">Maxview Sistem Pendataan Rental PS</h5>
+            <p class="open-sans-font">Created a desktop application for PS rental management using Java, featuring a countdown timer and a login system connected to MySQL.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Jun 2024</span>
+            <h5 class="poppins-font text-uppercase">Clone DIY Pen Plotter</h5>
+            <p class="open-sans-font">Engineered a DIY pen plotter machine capable of high-precision drawing, featuring an automatic tool changing mechanism.</p>
+        </li>
+        <li>
+            <div class="icon">
+                <i class="fa fa-briefcase"></i>
+            </div>
+            <span class="time open-sans-font text-uppercase">Jun 2024</span>
+            <h5 class="poppins-font text-uppercase">Nusantara Zoo</h5>
+            <p class="open-sans-font">Developed a web application for educational purposes about zoo animals using Laravel, incorporating Augmented Reality (AR) for interactive 3D models viewed via mobile devices.</p>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="col-lg-6 m-15px-tb">
+                <div class="resume-box">
+                    <ul>
+            <li>
+                <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <span class="time open-sans-font text-uppercase">2022 - Present</span>
+                <h5 class="poppins-font text-uppercase">Computer Engineering <span class="place open-sans-font">Indonesian Education University</span></h5>
+                <p class="open-sans-font">Currently pursuing a Bachelor's degree in Computer Engineering, focusing on software development and innovative technologies.</p>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Experience & Education Ends -->
+    </div>
+</section>
+<!-- Main Content Ends -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
